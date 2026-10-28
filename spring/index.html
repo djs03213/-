@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>四景山水图 · 春景</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <a class="back-to-directory" href="../index.html" aria-label="返回目录页">←</a>
+    <button class="language-toggle" id="language-toggle" type="button" aria-label="切换为中文" aria-pressed="false">
+      <span class="language-option language-option-en">EN</span>
+      <span class="language-divider" aria-hidden="true">/</span>
+      <span class="language-option language-option-zh">中文</span>
+    </button>
+    <main id="story" aria-label="四景山水图春景滚动预览">
+      <section class="chapter chapter-hero-house" data-chapter="hero-house">
+        <div class="sticky-frame">
+          <div class="scene-canvas scene-hero" id="hero-scene"></div>
+        </div>
+      </section>
+
+      <section class="chapter chapter-horizontal" data-chapter="roof-people-bridge">
+        <div class="sticky-frame">
+          <div class="horizontal-track" id="roof-people-track">
+            <article class="viewport-panel">
+              <div class="scene-canvas scene-roof" id="roof-scene"></div>
+            </article>
+            <article class="viewport-panel">
+              <div class="scene-canvas scene-people" id="people-scene"></div>
+            </article>
+          </div>
+          <div class="scene-canvas transition-layer scene-bridge" id="bridge-scene"></div>
+          <div class="scene-canvas transition-layer leaf-field" id="leaf-field"></div>
+        </div>
+      </section>
+
+      <section class="chapter chapter-stones" data-chapter="stones">
+        <div class="sticky-frame">
+          <div class="scene-canvas scene-stones" id="stone-scene"></div>
+        </div>
+      </section>
+
+      <section class="chapter chapter-trees" data-chapter="trees">
+        <div class="sticky-frame">
+          <div class="scene-canvas scene-trees" id="tree-scene"></div>
+        </div>
+      </section>
+
+      <section class="chapter chapter-recall" data-chapter="recall" id="recall-overview" aria-label="春景图全景回溯">
+        <div class="recall-frame" id="recall-frame">
+          <img class="recall-painting" src="./素材/春景全景回溯.png" alt="春景图全景" />
+          <div class="recall-map" id="recall-map" aria-label="点击热点返回对应介绍位置"></div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="hover-card" id="hover-card" aria-hidden="true">
+      <img id="hover-card-image" alt="" />
+    </aside>
+
+    <dialog class="detail-dialog" id="detail-dialog">
+      <button class="dialog-close" type="button" aria-label="关闭">×</button>
+      <img id="detail-image" alt="建筑零件说明" />
+    </dialog>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
