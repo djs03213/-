@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="《四景山水图》界画建筑交互目录：春、夏、秋、冬四时游观。" />
+    <title>界构四时｜四景山水图</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23f5f3ed'/%3E%3Cpath d='M12 45h40M17 45V27h30v18M13 27l19-13 19 13M24 45V32h16v13' fill='none' stroke='%23231f1b' stroke-width='3' stroke-linejoin='round'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="season-stage" aria-label="《四景山水图》四季目录">
+      <div class="artboard">
+        <div class="scene-stack" aria-hidden="true">
+          <img class="scene is-active" data-scene="spring" src="./assets/spring.png" alt="" />
+          <video class="scene spring-motion" src="./assets/spring-hover.mp4" poster="./assets/spring.png" muted loop playsinline preload="auto"></video>
+          <img class="scene" data-scene="summer" src="./assets/summer.png" alt="" />
+          <img class="scene" data-scene="autumn" src="./assets/autumn.png" alt="" />
+          <img class="scene" data-scene="winter" src="./assets/winter.png" alt="" />
+          <img class="spring-video-ui spring-video-logo" src="./assets/spring-logo-transparent.png" alt="" />
+          <img class="spring-video-ui spring-video-bottom" src="./assets/spring.png" alt="" />
+        </div>
+
+        <nav class="season-nav" aria-label="选择季节">
+          <button class="season-link is-active" data-season="spring" type="button" aria-label="查看春景">
+            <span class="season-halo"></span>
+          </button>
+          <button class="season-link" data-season="summer" type="button" aria-label="查看夏景">
+            <span class="season-halo"></span>
+          </button>
+          <button class="season-link" data-season="autumn" type="button" aria-label="查看秋景">
+            <span class="season-halo"></span>
+          </button>
+          <button class="season-link" data-season="winter" type="button" aria-label="查看冬景">
+            <span class="season-halo"></span>
+          </button>
+        </nav>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
